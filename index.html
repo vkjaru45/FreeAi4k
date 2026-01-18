@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 4K Image Enhancer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI 4K Image Enhancer</h1>
+    <p>Free • No Login • AI Powered</p>
+
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="upscale()">Enhance Image</button>
+
+    <p id="status"></p>
+
+    <div class="slider-container" id="sliderBox">
+      <img id="beforeImg">
+      <div class="after-wrapper">
+        <img id="afterImg">
+      </div>
+      <input type="range" min="0" max="100" value="50" id="slider">
+    </div>
+
+    <a id="downloadBtn" download="enhanced.png">Download Image</a>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
